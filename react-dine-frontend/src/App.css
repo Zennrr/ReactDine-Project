@@ -1,8 +1,49 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #070606;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  background-color: rgb(14, 170, 162);
+}
+
+.header {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  color: var(--secondary-color);
+}
+
+.header a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.header a:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+h1 {
+  margin-top: 3rem;
 }
 
 .logo {
@@ -11,9 +52,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em var(--primary-color)88);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -33,10 +76,71 @@
   }
 }
 
-.card {
-  padding: 2em;
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
 }
 
-.read-the-docs {
-  color: #888;
+.menu-item {
+  flex: 1 0 23%;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5em;
+  background-color: lightgray;
+  border: 5px solid var(--primary-color);
+  border-radius: 10px;
+  max-width: 30rem;
+  box-sizing: border-box;
 }
+
+.menu-item img {
+  max-width: 35%;
+  border-radius: 5px;
+  margin-bottom: 0.1rem;
+}
+
+.menu-item button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.menu-item button:hover {
+  background-color: #9cccff;
+}
+
+.menu-item input {
+  width: 40px; /* Adjust width as needed */
+  padding: 0.5rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  font-size: 1em;
+}
+
+.go-to-cart-button {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.go-to-cart-button:hover {
+  background-color: #9cccff;
+}
+
