@@ -43,7 +43,7 @@ const CheckoutPage = () => {
       return;
     }
 
-    // Create an order object matching your backend API's format
+    // Create an order object matching backend API's format
     const order = {
       order: {
         customer: {
@@ -61,7 +61,7 @@ const CheckoutPage = () => {
     };
 
     try {
-      // Send a POST request to your backend API
+      // Send a POST request to backend API
       const response = await axios.post('http://localhost:5000/api/orders', order);
 
       // Check if the order was successfully created
