@@ -51,7 +51,6 @@ const CheckoutForm = ({ onSubmit }) => {
       return;
     }
 
-    // Handle form submission logic here
     onSubmit(formData);
   };
 
