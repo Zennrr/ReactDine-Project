@@ -118,7 +118,7 @@ h1 {
 }
 
 .menu-item input {
-  width: 40px; /* Adjust width as needed */
+  width: 40px;
   padding: 0.5rem;
   border: 2px solid var(--primary-color);
   border-radius: 5px;
